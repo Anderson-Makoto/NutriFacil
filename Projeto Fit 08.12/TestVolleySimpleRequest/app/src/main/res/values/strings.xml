@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestVolleySimpleRequest</string>
+
+    <string-array name="refeicao">
+        <item>Café da Manhã</item>
+        <item>Almoço</item>
+        <item>Café da Tarde</item>
+        <item>Jantar</item>
+    </string-array>
+</resources>

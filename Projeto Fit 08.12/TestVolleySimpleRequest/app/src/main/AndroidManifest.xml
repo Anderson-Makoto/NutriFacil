@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.makoto.testvolleysimplerequest">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CadastroActivity" />
+        <activity android:name=".TelaUsuarioActivity" />
+        <activity android:name=".TelaNutricionistaActivity" />
+        <activity android:name=".CadastroNutricionistaActivity" />
+        <activity android:name=".CadastrarRefeicaoActivity" />
+        <activity android:name=".VerClientesActivity" />
+        <activity android:name=".VincularClienteActivity" />
+        <activity android:name=".ExcluirClienteActivity" />
+        <activity android:name=".AlterarContaNutricionistaActivity" />
+        <activity android:name=".DataActivity" />
+        <activity android:name=".VerNutricionistaActivity" />
+        <activity android:name=".VerDatasClienteActivity" />
+        <activity android:name=".VerValoresDiaClienteActivity" />
+        <activity android:name=".OfflineActivity" />
+
+        <receiver
+            android:name=".Receiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".itensSQLiteActivity" />
+        <activity android:name=".CaracteristicasUsuarioActivity" />
+        <activity android:name=".ListaCaracteristicasActivity" />
+        <activity android:name=".ListaCaracteristicasUsuarioActivity"></activity>
+    </application>
+
+</manifest>
